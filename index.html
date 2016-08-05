@@ -5,8 +5,177 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+  <!-- Шапка -->
+    <header class="header">
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="img/logo-small.png" alt="Nerd's" class="logo__logo-img_small">
+        </a>
+        <nav class="header__nav">
+          <ul class="menu">
+            <li>
+              <a href="#" class="menu__link">Студия</a>
+            </li>
+            <li>
+              <a href="#" class="menu__link">Клиенты</a>
+            </li>
+            <li>
+              <a href="#" class="menu__link">Магазин</a>
+            </li>
+            <li>
+              <a href="#" class="menu__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="cart">
+          <a href="#" class="cart__link">Корзина</a>
+        </div>
+      </div>
+    </header>
+  <!-- Конец шапки -->
+  <!-- Основной блок -->
+    <main class="main">
+      <div class="container">
+      <!-- Начало слайдера -->
+        <section class="slider">
+        <!-- Слайд 1 -->
+          <input type="radio" name="slider" id="slider__1" checked>
+          <label for="slider__1"></label>
+          <div class="slider__content">
+            <h2 class="h2">Долго, дорого, скрупулезно</h2>
+            <p class="slider__content_p">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+            <a href="#" class="slider__content_link">Узнать больше</a>
+            <img src="img/slider1" alt="Гаджеты" class="slider__content_img">
+          </div>
+        <!-- Слайд 2 -->
+          <input type="radio" name="slider" id="slider__2">
+          <label for="slider__2"></label>
+          <div class="slider__content">
+            <h2 class="h2">Любите ли вы математику, как любим ее мы?</h2>
+            <p class="slider__content_p">Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</p>
+            <a href="#" class="slider__content_link">Узнать больше</a>
+            <img src="img/slider2" alt="Калькулятор" class="slider__content_img">
+          </div>
+        <!-- Слайд 3 -->
+          <input type="radio" name="slider" id="slider__3">
+          <label for="slider__3"></label>
+          <div class="slider__content">
+            <h2 class="h2">Только наркотики, только хардкор!</h2>
+            <p class="slider__content_p">Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
+            <a href="#" class="slider__content_link">Узнать больше</a>
+            <img src="img/slider3" alt="Робот и радуга" class="slider__content_img">
+          </div>
+        </section>
+      <!-- Конец слайдера -->
+      <!-- Секция об услугах -->
+        <article class="services">
+          <section class="websites">
+            <img src="img/websites.png" alt="Ноутбук" class="services__img">
+            <p class="services__name">Веб-сайты</p>
+            <p class="services__desc">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a href="#" class="services__link services__link_red">Заказать</a>
+          </section>
+          <section class="apps">
+            <img src="img/apps.png" alt="2 айфона" class="services__img">
+            <p class="services__name">Приложения</p>
+            <p class="services__desc">Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a href="#" class="services__link services__link_green">Заказать</a>
+          </section>
+          <section class="presentations">
+            <img src="img/presentations.png" alt="Презентация" class="services__img">
+            <p class="services__name">Презентации</p>
+            <p class="services__desc">Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a href="#" class="services__link services__link_yellow">Заказать</a>
+          </section>
+        </article>
+      <!-- Конец секции об услугах -->
+        <hr>
+      <!-- Секция о нас -->
+        <article class="about-us">
+          <section class="top">
+            <div class="top__left">
+              <h2 class="h2">Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
+              <p class="about-us__desc">Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+            </div>
+            <div class="top__right">
+              <img src="img/logo-medium.png" alt="Nerd's" class="logo-img_medium">
+              <p class="date-of-foundation">Since 2004</p>
+            </div>
+          </section>
+          <section class="bottom">
+            <div class="bottom__left">
+              <p class="about-us__services_uppercase">Выполняем заказы на разработку:</p>
+              <ul class="about-us__services">
+                <li class="about-us__services_red-line-before">Веб-сайтов любой сложности</li>
+                <li class="about-us__services_red-line-before">Мобильных приложений для iOS и Android</li>
+                <li class="about-us__services_red-line-before">Слайдшоу и видео для корпоративных презентаций</li>
+              </ul>
+            </div>
+            <div class="bottom__right">
+              <p class="about-us__skills_uppercase">Как мы работаем:</p>
+              <ul class="about-us__skills">
+                <li class="about-us__skills_red-line-before">С самоотдачей 146%</li>
+                <li class="about-us__skills_red-line-before">Соблюдая сроки на 100%</li>
+                <li class="about-us__services_red-line-before">По предоплате 50%</li>
+              </ul>
+            </div>
+          </section>
+        </article>
+      <!-- Конец секции о нас -->
+        <hr>
+      <!-- Секция о партнерах -->
+        <section class="partners">
+          <img src="img/glukhanko" alt="Glukhanko" class="partner">
+          <img src="htmlacademy" alt="Html academy" class="partner">
+          <img src="borodinski" alt="Barbershop Borodinski" class="partner">
+        </section>
+      <!-- Конец секции о партнерах -->
+        <hr>
+    <!-- Нижний div закрывает div с классом container -->
+      </div>
+    </main>
+  <!-- Конец основного блока -->
+  <!-- Начало подвала -->
+    <footer class="footer">
+    <!-- Начало интерактивной карты -->
+      <article class="footer__map">
+      <!-- Код карты гугл -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1054.4654829750073!2d30.32087151353328!3d59.938796179065946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1470421729148" width="800" height="415" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <!-- Секция контакты на карте -->
+        <div class="contacts">
+          <p class="contacts__name">Nёrds design studio</p>
+          <p class="contacts__adress">
+            191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8
+          </p>
+          <p class="contacts__phone">тел. +7 (812) 275-75-75</p>
+          <a href="#" class="contacts__feedback">Напишите нам</a>
+        </div>
+      <!-- Конец секции контакты на карте -->
+      <!-- Маркер, показывающий расположение компании на карте -->
+        <div class="marker">
+          <img src="img/logo-tiny" alt="Nerd's" class="logo-img_tiny">
+          <img src="img/marker__bubble" alt="Указатель" class="marker__bubble">
+        </div>
+      <!-- Конец маркера -->
+      </article>
+    <!-- Конец интерактивной карты -->
+      <div class="container">
+      <section class="footer__social">
+        <!-- Секция с социальными кнопками -->
+          <section class="social-btn">
+            <a href="https://www.vk.com" class="social-btn__vk">Вконтакте</a>
+            <a href="https://www.facebook.com" class="social-btn__fb">Фейсбук</a>
+            <a href="https://www.instagram.com" class="social-btn__inst">Инстаграм</a>
+          </section>
+        <!-- Конец секции с социальными кнопками -->
+          <div class="social-text">
+            <h2 class="h2">Давайте дружить, это выгодно!</h2>
+            <p class="social-text__details">Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+        </section>
+      </div>
+    </footer>
+  <!-- Конец подвала -->
   </body>
 </html>
