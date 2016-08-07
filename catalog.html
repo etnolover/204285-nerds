@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+  <!-- Шапка -->
+    <header class="header">
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="img/logo-small.png" alt="Nerd's" class="logo__logo-img_small">
+        </a>
+        <nav class="header__nav">
+          <ul class="menu">
+            <li>
+              <a href="#" class="menu__link">Студия</a>
+            </li>
+            <li>
+              <a href="#" class="menu__link">Клиенты</a>
+            </li>
+            <li>
+              <a href="#" class="menu__link">Магазин</a>
+            </li>
+            <li>
+              <a href="#" class="menu__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="cart">
+          <a href="#" class="cart__link">Корзина</a>
+        </div>
+      </div>
+    </header>
+  <!-- Конец шапки -->
+  <!-- Основной блок -->
+    <main class="main">
+      <div class="container">
+        <h1 class="main__h1">Добро пожаловать в магазин готовых макетов</h1>
+      <!-- Левая колонка с фильтрами -->
+        <aside class="main-left">
+          <form method="post" class="main-left__filter">
+            <fieldset class="price">
+              <legend class="price__legend">Стоимость:</legend>
+            </fieldset>
+            <fieldset class="grid-types">
+              <legend class="grid-types__legend">Сетка:</legend>
+              <label><input name="grid-type" value="adaptive" type="radio" class="grid-types__variant" checked>Адаптивная</label>
+              <label><input name="grid-type" value="fixed" type="radio" class="grid-types__variant">Фиксированная</label>
+              <label><input name="grid-type" value="rubber" type="radio" class="grid-types__variant">Резиновая</label>
+            </fieldset>
+            <fieldset class="features">
+              <legend class="features__legend">Особенности:</legend>
+              <label><input type="checkbox" name="features" value="slider" class="features__type" checked>Слайдер</label>
+              <label><input type="checkbox" name="features" value="advantages" class="features__type">Блок преимуществ</label>
+              <label><input type="checkbox" name="features" value="news" class="features__type" checked>Новости</label>
+              <label><input type="checkbox" name="features" value="gallery" class="features__type">Галерея</label>
+              <label><input type="checkbox" name="features" value="cart" class="features__type">Корзина</label>
+            </fieldset>
+            <input type="submit" value="Показать" class="filter__submit">
+          </form>
+        </aside>
+      <!-- Конец левой колонки с фильтрами -->
+        <div class="main-right">
+        <!-- Секция "сортировать" -->
+          <div class="sort-by">
+            <span class="header-of-sort-by">Сортировать:</span>
+            <label><input type="radio" name="sort-by" class="sort-by__option">По цене</label>
+            <label><input type="radio" name="sort-by" class="sort-by__option">По типу</label>
+            <label><input type="radio" name="sort-by" class="sort-by__option">По функционалу</label>
+          </div>
+        <!-- Конец секции "сортировать" -->
+        <!-- Секция выбора макетов -->
+          <div class="shop">
+          <!-- Описание макета -->
+            <div class="shop-item">
+              <img src="img/aviator" alt="Aviator" class="shop-item__image">
+              <div class="shop-item-order">
+                <p class="shop-item-order__name">Aviator</p>
+                <p class="shop-item-order__desc">Одностраничный макет с авторским дизайном</p>
+                <input type="submit" value="8000 Р." class="shop-item-order__to-cart">
+              </div>
+            </div>
+          <!-- Описание макета -->
+            <div class="shop-item">
+              <img src="img/sunset" alt="Sunset" class="shop-item__image">
+              <div class="shop-item-order">
+                <p class="shop-item-order__name">Sunset</p>
+                <p class="shop-item-order__desc">Интернет-магазин с личным кабинетом</p>
+                <input type="submit" value="10000 Р." class="shop-item-order__to-cart">
+              </div>
+            </div>
+          <!-- Описание макета -->
+            <div class="shop-item">
+              <img src="img/forte" alt="Forte" class="shop-item__image">
+              <div class="shop-item-order">
+                <p class="shop-item-order__name">Forte</p>
+                <p class="shop-item-order__desc">Отличный макет для личного блога</p>
+                <input type="submit" value="5000 Р." class="shop-item-order__to-cart">
+              </div>
+            </div>
+          <!-- Описание макета -->
+            <div class="shop-item">
+              <img src="img/thai" alt="Modern Organic Thai" class="shop-item__image">
+              <div class="shop-item-order">
+                <p class="shop-item-order__name">Modern organic thai</p>
+                <p class="shop-item-order__desc">Сайт для ресторана быстрого питания</p>
+                <input type="submit" value="12000 Р." class="shop-item-order__to-cart">
+              </div>
+            </div>
+          <!-- Описание макета -->
+            <div class="shop-item">
+              <img src="img/avenue" alt="Avenue" class="shop-item__image">
+              <div class="shop-item-order">
+                <p class="shop-item-order__name">Avenue</p>
+                <p class="shop-item-order__desc">Макет для блога о путешествиях</p>
+                <input type="submit" value="8000 Р." class="shop-item-order__to-cart">
+              </div>
+            </div>
+          <!-- Описание макета -->
+            <div class="shop-item">
+              <img src="img/dovetail" alt="Dovetail" class="shop-item__image">
+              <div class="shop-item-order">
+                <p class="shop-item-order__name">Dovetail</p>
+                <p class="shop-item-order__desc">Интернет-магазин с галереей товаров</p>
+                <input type="submit" value="8000 Р." class="shop-item-order__to-cart">
+              </div>
+            </div>
+          <!-- Pagination -->
+            <ul class="pagination">
+              <li class="pagination_active"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">Следующая</a></li>
+            </ul>
+          <!-- Конец Pagination -->
+          </div>
+        <!-- Конец секции выбора макетов -->
+        </div>
+      <!-- Конец секции "main-right" -->
+      </div>
+    <!-- Конец контейнера -->
+    </main>
+  <!-- Конец основного блока -->
+  <!-- Начало подвала -->
+    <footer class="footer">
+    <!-- Начало интерактивной карты -->
+      <article class="footer__map">
+      <!-- Код карты гугл -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1054.4654829750073!2d30.32087151353328!3d59.938796179065946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1470421729148" width="800" height="415" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <!-- Секция контакты на карте -->
+        <div class="contacts">
+          <p class="contacts__name">Nёrds design studio</p>
+          <p class="contacts__adress">
+            191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8
+          </p>
+          <p class="contacts__phone">тел. +7 (812) 275-75-75</p>
+          <a href="#" class="contacts__feedback">Напишите нам</a>
+        </div>
+      <!-- Конец секции контакты на карте -->
+      <!-- Маркер, показывающий расположение компании на карте -->
+        <div class="marker">
+          <img src="img/logo-tiny" alt="Nerd's" class="logo-img_tiny">
+          <img src="img/marker__bubble" alt="Указатель" class="marker__bubble">
+        </div>
+      <!-- Конец маркера -->
+      </article>
+    <!-- Конец интерактивной карты -->
+      <div class="container">
+      <section class="footer__social">
+        <!-- Секция с социальными кнопками -->
+          <section class="social-btn">
+            <a href="https://www.vk.com" class="social-btn__vk">Вконтакте</a>
+            <a href="https://www.facebook.com" class="social-btn__fb">Фейсбук</a>
+            <a href="https://www.instagram.com" class="social-btn__inst">Инстаграм</a>
+          </section>
+        <!-- Конец секции с социальными кнопками -->
+          <div class="social-text">
+            <h2 class="h2">Давайте дружить, это выгодно!</h2>
+            <p class="social-text__details">Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+        </section>
+      </div>
+    </footer>
+  <!-- Конец подвала -->
+  </body>
+</html>
