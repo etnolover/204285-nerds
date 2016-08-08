@@ -9,7 +9,7 @@
     <header class="header">
       <div class="container">
         <a href="#" class="logo">
-          <img src="img/logo-small.png" alt="Nerd's" class="logo__logo-img_small">
+          <img src="img/logo-small.png" alt="Nerd's" class="logo-img logo-img_small">
         </a>
         <nav class="header__nav">
           <ul class="menu">
@@ -40,7 +40,7 @@
         <section class="slider">
         <!-- Слайд 1 -->
           <input type="radio" name="slider" id="slider__1" checked>
-          <label for="slider__1"></label>
+          <label for="slider__1" class="slider__label"></label>
           <div class="slider__content">
             <h2 class="h2">Долго, дорого, скрупулезно</h2>
             <p class="slider__content_p">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
@@ -49,7 +49,7 @@
           </div>
         <!-- Слайд 2 -->
           <input type="radio" name="slider" id="slider__2">
-          <label for="slider__2"></label>
+          <label for="slider__2" class="slider__label"></label>
           <div class="slider__content">
             <h2 class="h2">Любите ли вы математику, как любим ее мы?</h2>
             <p class="slider__content_p">Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</p>
@@ -58,7 +58,7 @@
           </div>
         <!-- Слайд 3 -->
           <input type="radio" name="slider" id="slider__3">
-          <label for="slider__3"></label>
+          <label for="slider__3" class="slider__label"></label>
           <div class="slider__content">
             <h2 class="h2">Только наркотики, только хардкор!</h2>
             <p class="slider__content_p">Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
@@ -68,61 +68,59 @@
         </section>
       <!-- Конец слайдера -->
       <!-- Секция об услугах -->
-        <article class="services">
-          <section class="websites">
+        <section class="services">
+          <article class="websites">
             <img src="img/websites.png" alt="Ноутбук" class="services__img">
             <p class="services__name">Веб-сайты</p>
             <p class="services__desc">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
             <a href="#" class="services__link services__link_red">Заказать</a>
-          </section>
-          <section class="apps">
+          </article>
+          <article class="apps">
             <img src="img/apps.png" alt="2 айфона" class="services__img">
             <p class="services__name">Приложения</p>
             <p class="services__desc">Покорите топ-10 приложений в AppStore и Google Play</p>
             <a href="#" class="services__link services__link_green">Заказать</a>
-          </section>
-          <section class="presentations">
+          </article>
+          <article class="presentations">
             <img src="img/presentations.png" alt="Презентация" class="services__img">
             <p class="services__name">Презентации</p>
             <p class="services__desc">Вы даже не подозреваете, насколько вы изумительны!</p>
             <a href="#" class="services__link services__link_yellow">Заказать</a>
-          </section>
-        </article>
+          </article>
+        </section>
       <!-- Конец секции об услугах -->
-        <hr>
       <!-- Секция о нас -->
         <article class="about-us">
-          <section class="top">
-            <div class="top__left">
+          <section class="about-us-top">
+            <div class="about-us-top__left">
               <h2 class="h2">Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
-              <p class="about-us__desc">Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+              <p class="about-us-top__desc">Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
             </div>
-            <div class="top__right">
-              <img src="img/logo-medium.png" alt="Nerd's" class="logo-img_medium">
+            <div class="about-us-top__right">
+              <img src="img/logo-medium.png" alt="Nerd's" class="logo-img logo-img_medium">
               <p class="date-of-foundation">Since 2004</p>
             </div>
           </section>
-          <section class="bottom">
-            <div class="bottom__left">
-              <p class="about-us__services_uppercase">Выполняем заказы на разработку:</p>
-              <ul class="about-us__services">
-                <li class="about-us__services_red-line-before">Веб-сайтов любой сложности</li>
-                <li class="about-us__services_red-line-before">Мобильных приложений для iOS и Android</li>
-                <li class="about-us__services_red-line-before">Слайдшоу и видео для корпоративных презентаций</li>
+          <section class="about-us-bottom">
+            <div class="about-us-bottom__left">
+              <p class="about-us-bottom__services about-us-bottom__services_uppercase">Выполняем заказы на разработку:</p>
+              <ul class="about-us-bottom__services-list">
+                <li class="about-us-bottom__services-li about-us-bottom__services-li_red-line-before">Веб-сайтов любой сложности</li>
+                <li class="about-us-bottom__services-li about-us-bottom__services-li_red-line-before">Мобильных приложений для iOS и Android</li>
+                <li class="about-us-bottom__services-li about-us-bottom__services-li_red-line-before">Слайдшоу и видео для корпоративных презентаций</li>
               </ul>
             </div>
-            <div class="bottom__right">
-              <p class="about-us__skills_uppercase">Как мы работаем:</p>
-              <ul class="about-us__skills">
-                <li class="about-us__skills_red-line-before">С самоотдачей 146%</li>
-                <li class="about-us__skills_red-line-before">Соблюдая сроки на 100%</li>
-                <li class="about-us__services_red-line-before">По предоплате 50%</li>
+            <div class="about-us-bottom__right">
+              <p class="about-us-bottom__skills about-us-bottom__skills_uppercase">Как мы работаем:</p>
+              <ul class="about-us-bottom__skills-list">
+                <li class="about-us-bottom__skills-list-li about-us-bottom__skills-list-li_red-line-before">С самоотдачей 146%</li>
+                <li class="about-us-bottom__skills-list-li about-us-bottom__skills-list-li_red-line-before">Соблюдая сроки на 100%</li>
+                <li class="about-us-bottom__skills-list-li about-us-bottom__skills-list-li_red-line-before">По предоплате 50%</li>
               </ul>
             </div>
           </section>
         </article>
       <!-- Конец секции о нас -->
-        <hr>
       <!-- Секция о партнерах -->
         <section class="partners">
           <img src="img/glukhanko" alt="Glukhanko" class="partner">
@@ -130,7 +128,6 @@
           <img src="borodinski" alt="Barbershop Borodinski" class="partner">
         </section>
       <!-- Конец секции о партнерах -->
-        <hr>
     <!-- Нижний div закрывает div с классом container -->
       </div>
     </main>
@@ -153,10 +150,7 @@
         </div>
       <!-- Конец секции контакты на карте -->
       <!-- Маркер, показывающий расположение компании на карте -->
-        <div class="marker">
-          <img src="img/logo-tiny" alt="Nerd's" class="logo-img_tiny">
-          <img src="img/marker__bubble" alt="Указатель" class="marker__bubble">
-        </div>
+        <img src="img/marker" alt="Указатель" class="marker">
       <!-- Конец маркера -->
       </article>
     <!-- Конец интерактивной карты -->
