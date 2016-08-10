@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  font-weight: 400;
+  color: #283136;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: 'Roboto Medium';
+  color: #000;
+}
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+}
