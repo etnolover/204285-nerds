@@ -1,16 +1,27 @@
+@font-face {
+  font-family: 'Roboto Medium';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'),
+       url('../fonts/robotomedium.woff2') format('woff2'),
+       url('../fonts/robotomedium.woff') format('woff'),
+       url('../fonts/Roboto-Medium.ttf') format('ttf');
+}
 * {
   box-sizing: border-box;
 }
 body {
+  margin: 0;
+  padding: 0;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
+  font-family: 'Roboto Medium';
   color: #283136;
 }
 h1 {
   font-size: 40px;
   font-weight: 700;
   line-height: 1.2;
-  font-family: 'Roboto Medium';
   color: #000;
 }
 h2 {
@@ -18,4 +29,332 @@ h2 {
   font-weight: 700;
   line-height: 1;
   color: #000;
+}
+/* Центровщик */
+.container {
+  margin: 0 auto;
+  /* Ширина контейнера - 880px. Плюс по 10px padding справа и слева */
+  width: 900px;
+  /* Padding по горизонтали для лучшей видимости на малых экранах */
+  padding: 0 10px;
+}
+/*////////////////////////////////////////////////////*/
+/*----------------------Шапка------------------------ */
+/*////////////////////////////////////////////////////*/
+
+.header {
+  /* 62px (расстояния от верха страницы до текста) + 14px (размер текста) + 62px */
+  min-height: 138px;
+  /* Нулевой шрифт для борьбы с пробелами в inline-block */
+  font-size: 0;
+}
+.logo-header {
+  display: inline-block;
+  padding-top: 27px;
+  margin-right: 184px;
+  font-size: 0;
+}
+.logo__img {
+  font-size: 16px;
+}
+.header__nav {
+  display: inline-block;
+  padding: 0;
+  padding-top: 62px;
+  margin: 0;
+  margin-right: 94px;
+  vertical-align: top;
+}
+.menu {
+  display: inline-block;
+  padding: 0;
+  vertical-align: top;
+}
+.menu__li {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 45px;
+}
+.menu__li:last-of-type {
+  margin-right: 0;
+}
+.menu__link {
+  /* Восстанавливаем размер шрифта, обнулённый методом борьбы с пробелами */
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.cart {
+  display: inline-block;
+  padding-top: 62px;
+  vertical-align: top;
+}
+.cart__link {
+  /* Восстанавливаем размер шрифта, обнулённый методом борьбы с пробелами */
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/*////////////////////////////////////////////////////*/
+/*------------------Основной блок-------------------- */
+/*////////////////////////////////////////////////////*/
+
+/*----------------Стили для слайдера----------------- */
+.slider {
+  position: relative;
+  width: 880px;
+  height: 310px;
+  margin: 0 auto;
+}
+.slider__input_radio {
+  position:absolute;
+  opacity: 0;
+}
+.slider__controls{
+  position: absolute;
+  bottom: 9 5px;
+  left: 50%;
+  width: 200px;
+  height: 10px;
+  margin-left: -100px;
+  text-align: center;
+  z-index: 1000;
+}
+.slider__control {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin: 0 3px;
+  background: white;
+  border: 3px solid white;
+  vertical-align: top;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slider__input_radio:checked ~ .slider__control-1,
+.slider__input_radio:checked ~ .slider__control-2,
+.slider__input_radio:checked ~ .slider__control-3 {
+  background: #c1c1c1;
+}
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.slide-text {
+  width: 380px;
+  padding: 30px 0;
+  color: #283136;
+}
+.slide-text__title {
+  font-size: 36px;
+  line-height: 1;
+  font-weight: bold;
+  color: black;
+}
+.slide-text__link {
+  display: block;
+  width: 240px;
+  padding: 10px 0;
+  margin-top: 25px;
+  font-size: 12px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  background: #fb565a;
+  border-radius: 3px;
+}
+.slide:nth-child(1) {
+  background-image: url('../img/slider1.png');
+  background-repeat: no-repeat;
+  background-position: 100% 10px;
+}
+.slide:nth-child(2){
+  background-image: url('../img/slider2.png');
+  background-repeat: no-repeat;
+  background-position: 100% 10px;
+}
+.slide:nth-child(3) {
+  background-image: url('../img/slider3.png');
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+.slide {
+  display: none;
+}
+.slider__input_radio:checked ~ .slide:nth-child(1) {
+  display: block;
+}
+.slider__input_radio:checked ~ .slide:nth-child(2) {
+  display: block;
+}
+.slider__input_radio:checked ~ .slide:nth-child(3) {
+  display: block;
+}
+/*-------------Конец стилей для слайдера------------- */
+
+/*---------------Стили для секции услуг-------------- */
+.services {
+  margin-bottom: 80px;
+  font-size: 0;
+}
+.services__service {
+  display: inline-block;
+  margin: 0;
+  margin-right: 80px;
+  vertical-align: top;
+  width: 240px;
+}
+.services__service:last-of-type {
+  margin: 0;
+}
+.services__img {
+ /* Восстанавливаем размер шрифта, обнулённый методом борьбы с пробелами */
+  font-size: 16px;
+}
+.services__name {
+ /* Восстанавливаем размер шрифта, обнулённый методом борьбы с пробелами */
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.services__desc {
+ /* Восстанавливаем размер шрифта, обнулённый методом борьбы с пробелами */
+  font-size: 15px;
+}
+.services__link-container {
+  display: inline-block;
+  width: 140px;
+  height: 38px;
+  border-radius: 3px;
+  text-align: center;
+}
+.services__link-container_red {
+  background-color: #fb565a;
+}
+.services__link-container_green {
+  background-color: #00ca74;
+}
+.services__link-container_yellow {
+  background-color: #efc84a;
+}
+.services__link {
+  /* Сделать кнопку */
+ /* Восстанавливаем размер шрифта, обнулённый методом борьбы с пробелами */
+  font-size: 12px;
+  text-decoration: none;
+  color: #FFF;
+  text-transform: uppercase;
+}
+/*-------------Конец стилей для секции услуг------------- */
+
+/*---------------Стили для секции О нас-------------- */
+.about-us {
+  font-size: 0;
+}
+.about-us-top__left {
+  display: inline-block;
+  margin-right: 65px;
+  width: 573px;
+}
+.h2 {
+ /* Восстанавливаем размер шрифта, обнулённый методом борьбы с пробелами */
+  font-size: 36px;
+  margin: 0;
+}
+.about-us-top__desc {
+ /* Восстанавливаем размер шрифта, обнулённый методом борьбы с пробелами */
+  font-size: 16px;
+}
+.about-us-top__right {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  width: 242px;
+}
+.date-of-foundation {
+ /* Восстанавливаем размер шрифта, обнулённый методом борьбы с пробелами */
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.about-us-bottom__left {
+  display: inline-block;
+  margin-right: 65px;
+  width: 573px;
+}
+.about-us-bottom__services {
+ /* Восстанавливаем размер шрифта, обнулённый методом борьбы с пробелами */
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.about-us-bottom__services-li {
+ /* Восстанавливаем размер шрифта, обнулённый методом борьбы с пробелами */
+  font-size: 16px;
+}
+.about-us-bottom {
+  margin-bottom: 76px;
+}
+.about-us-bottom__right {
+  display: inline-block;
+  width: 242px;
+}
+.about-us-bottom__skills {
+ /* Восстанавливаем размер шрифта, обнулённый методом борьбы с пробелами */
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.about-us-bottom__skills-list-li {
+ /* Восстанавливаем размер шрифта, обнулённый методом борьбы с пробелами */
+  font-size: 16px;
+}
+/*-------------Конец стилей для секции О нас------------- */
+
+/*---------------Стили для секции Партнёры-------------- */
+.partners {
+  height: 170px;
+  margin-bottom: 76px;
+  font-size: 0;
+}
+.partner {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 16px;
+}
+.partner:first-of-type {
+  margin-right: 120px;
+  margin-left: 12px;
+}
+.partner:nth-of-type(2) {
+  margin-right: 123px;
+}
+/*-------------Конец стилей для секции Партнёры------------- */
+
+/*////////////////////////////////////////////////////*/
+/*---------------Конец Основного блока--------------- */
+/*////////////////////////////////////////////////////*/
+
+
+/*////////////////////////////////////////////////////*/
+/*-----------------------Подвал---------------------- */
+/*////////////////////////////////////////////////////*/
+
+/*---------------Стили для секции Карты-------------- */
+.footer__map {
+  width: 100%;
+}
+.social-btn {
+  display: inline-block;
+  width: 240px;
+  margin-right: 80px;
+  height: 100%;
+  vertical-align: top;
+}
+.social-text {
+  display: inline-block;
+  vertical-align: top;
 }
