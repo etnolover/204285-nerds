@@ -9,21 +9,21 @@
   <!-- Шапка -->
     <header class="header">
       <div class="container">
-        <a href="#" class="logo">
-          <img src="img/logo-small.png" alt="Nerd's" width="139" height="56" class="logo-img logo-img_small">
+        <a href="#" class="logo-header">
+          <img src="img/logo-small.png" alt="Nerd's" width="139" height="56" class="logo_small logo__img">
         </a>
         <nav class="header__nav">
           <ul class="menu">
-            <li>
+            <li class="menu__li">
               <a href="#" class="menu__link">Студия</a>
             </li>
-            <li>
+            <li class="menu__li">
               <a href="#" class="menu__link">Клиенты</a>
             </li>
-            <li>
+            <li class="menu__li">
               <a href="#" class="menu__link">Магазин</a>
             </li>
-            <li>
+            <li class="menu__li">
               <a href="#" class="menu__link">Контакты</a>
             </li>
           </ul>
@@ -39,54 +39,70 @@
       <div class="container">
       <!-- Начало слайдера -->
         <section class="slider">
-        <!-- Слайд 1 -->
-          <input type="radio" name="slider" id="slider__1" checked>
-          <label for="slider__1" class="slider__label"></label>
-          <div class="slider__content">
-            <h2 class="h2">Долго, дорого, скрупулезно</h2>
-            <p class="slider__content_p">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-            <a href="#" class="slider__content_link">Узнать больше</a>
-            <img src="img/slider1.png" alt="Гаджеты" width="338" height="231" class="slider__content_img">
+        <!-- Переключатель слайдов -->
+          <input class="slider__input_radio" type="radio" id="btn-1" name="toggle" checked>
+          <input class="slider__input_radio" type="radio" id="btn-2" name="toggle">
+          <input class="slider__input_radio" type="radio" id="btn-3" name="toggle">
+          <div class="slider__controls">
+            <label for="btn-1" class="slider__control slider__control-1 slider__control_active"></label>
+            <label for="btn-2" class="slider__control slider__control-2"></label>
+            <label for="btn-3" class="slider__control slider__control-3"></label>
           </div>
-        <!-- Слайд 2 -->
-          <input type="radio" name="slider" id="slider__2">
-          <label for="slider__2" class="slider__label"></label>
-          <div class="slider__content">
-            <h2 class="h2">Любите ли вы математику, как любим ее мы?</h2>
-            <p class="slider__content_p">Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</p>
-            <a href="#" class="slider__content_link">Узнать больше</a>
-            <img src="img/slider2.png" alt="Калькулятор" width="230" height="249" class="slider__content_img">
-          </div>
-        <!-- Слайд 3 -->
-          <input type="radio" name="slider" id="slider__3">
-          <label for="slider__3" class="slider__label"></label>
-          <div class="slider__content">
-            <h2 class="h2">Только наркотики, только хардкор!</h2>
-            <p class="slider__content_p">Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
-            <a href="#" class="slider__content_link">Узнать больше</a>
-            <img src="img/slider3.png" alt="Робот и радуга" width="333" height="319" class="slider__content_img">
+        <!-- Слайды -->
+          <div class="slides">
+          <!-- Слайд 1 -->
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-text__title">Долго, дорого, скрупулезно</div>
+                <p class="slide-text__description">Математически выверенный дизайн<br>
+                для вашего сайта или мобильного приложения.</p>
+                <a href="#" class="slide-text__link">Узнать больше</a>
+              </div>
+            </div>
+          <!-- Слайд 2 -->
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-text__title">Любите ли вы математику, как любим ее мы?</div>
+                <p class="slide-text__description">Нашим дизайнерам мы удаляем нейроны, ответственные<br>за креатив, чтобы дать им возможность все просчитать</p>
+                <a href="#" class="slide-text__link">Узнать больше</a>
+              </div>
+            </div>
+          <!-- Слайд 3 -->
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-text__title">Только наркотики, только хардкор!</div>
+                <p class="slide-text__description">Все дизайнерские решения в нашей компании принимаются<br>только под воздействием качественных галлюциногенов</p>
+                <a href="#" class="slide-text__link">Узнать больше</a>
+              </div>
+            </div>
           </div>
         </section>
       <!-- Конец слайдера -->
       <!-- Секция об услугах -->
         <section class="services">
-          <article class="websites">
+          <article class="services__service">
             <img src="img/websites.png" alt="Ноутбук" width="240" height="124" class="services__img">
             <p class="services__name">Веб-сайты</p>
             <p class="services__desc">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a href="#" class="services__link services__link_red">Заказать</a>
+            <span class="services__link-container services__link-container_red">
+              <a href="#" class="services__link">Заказать</a>
+            </span>
           </article>
-          <article class="apps">
+          <article class="services__service">
             <img src="img/apps.png" alt="2 айфона" width="240" height="124" class="services__img">
             <p class="services__name">Приложения</p>
-            <p class="services__desc">Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a href="#" class="services__link services__link_green">Заказать</a>
+            <p class="services__desc">Покорите топ-10 приложений <br>в AppStore и Google Play</p>
+            <span class="services__link-container services__link-container_green">
+              <a href="#" class="services__link">Заказать</a>
+            </span>
           </article>
-          <article class="presentations">
+          <article class="services__service">
             <img src="img/presentations.png" alt="Презентация" width="240" height="124" class="services__img">
             <p class="services__name">Презентации</p>
             <p class="services__desc">Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a href="#" class="services__link services__link_yellow">Заказать</a>
+            <span class="services__link-container services__link-container_yellow">
+              <a href="#" class="services__link">Заказать</a>
+            </span>
           </article>
         </section>
       <!-- Конец секции об услугах -->
@@ -94,17 +110,19 @@
         <article class="about-us">
           <section class="about-us-top">
             <div class="about-us-top__left">
-              <h2 class="h2">Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
+              <h2 class="h2">Мы&mdash;маленькая, но гордая дизайн-студия из Краснодара.</h2>
               <p class="about-us-top__desc">Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
             </div>
             <div class="about-us-top__right">
-              <img src="img/logo-medium.png" alt="Nerd's" width="187" height="75" class="logo-img logo-img_medium">
+              <span class="logo-main">
+                <img src="img/logo-medium.png" alt="Nerd's" width="187" height="75" class="logo_medium logo__img">
+              </span>
               <p class="date-of-foundation">Since 2004</p>
             </div>
           </section>
           <section class="about-us-bottom">
             <div class="about-us-bottom__left">
-              <p class="about-us-bottom__services about-us-bottom__services_uppercase">Выполняем заказы на разработку:</p>
+              <p class="about-us-bottom__services">Выполняем заказы на разработку:</p>
               <ul class="about-us-bottom__services-list">
                 <li class="about-us-bottom__services-li about-us-bottom__services-li_red-line-before">Веб-сайтов любой сложности</li>
                 <li class="about-us-bottom__services-li about-us-bottom__services-li_red-line-before">Мобильных приложений для iOS и Android</li>
@@ -112,7 +130,7 @@
               </ul>
             </div>
             <div class="about-us-bottom__right">
-              <p class="about-us-bottom__skills about-us-bottom__skills_uppercase">Как мы работаем:</p>
+              <p class="about-us-bottom__skills">Как мы работаем:</p>
               <ul class="about-us-bottom__skills-list">
                 <li class="about-us-bottom__skills-list-li about-us-bottom__skills-list-li_red-line-before">С самоотдачей 146%</li>
                 <li class="about-us-bottom__skills-list-li about-us-bottom__skills-list-li_red-line-before">Соблюдая сроки на 100%</li>
@@ -138,7 +156,7 @@
     <!-- Начало интерактивной карты -->
       <article class="footer__map">
       <!-- Код карты гугл -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1054.4654829750073!2d30.32087151353328!3d59.938796179065946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1470421729148" width="800" height="415" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1054.4654829750073!2d30.32087151353328!3d59.938796179065946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1470421729148" width="100%" height="415" frameborder="0" style="border:0" allowfullscreen></iframe>
       <!-- Секция контакты на карте -->
         <div class="contacts">
           <p class="contacts__name">Nёrds design studio</p>
@@ -156,13 +174,13 @@
       </article>
     <!-- Конец интерактивной карты -->
       <div class="container">
-      <section class="social">
+        <section class="social">
         <!-- Секция с социальными кнопками -->
-          <section class="social-btn">
+          <div class="social-btn">
             <a href="https://www.vk.com" class="social-btn__vk">Вконтакте</a>
             <a href="https://www.facebook.com" class="social-btn__fb">Фейсбук</a>
             <a href="https://www.instagram.com" class="social-btn__inst">Инстаграм</a>
-          </section>
+          </div>
         <!-- Конец секции с социальными кнопками -->
           <div class="social-text">
             <h2 class="h2">Давайте дружить, это выгодно!</h2>
