@@ -358,3 +358,102 @@ h2 {
   display: inline-block;
   vertical-align: top;
 }
+
+/*////////////////////////////////////////////////////*/
+/*-----------------Стили Catalog.html---------------- */
+/*////////////////////////////////////////////////////*/
+.page-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+.main-left {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  margin-right: 80px;
+  font-size: 0;
+  /* Поправить ширину */
+  width: 200px;
+}
+.price {
+  height: 170px;
+  margin-bottom: 54px;
+}
+.price__legend {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.grid-types {
+  height: 142px;
+  margin-bottom: 54px;
+}
+.grid-types__legend {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.grid-types__label {
+  display: block;
+  font-size: 16px;
+}
+.features {
+  height: 220px;
+  margin-bottom: 58px;
+}
+.features__legend {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.features__label {
+  display: block;
+  font-size: 16px;
+}
+.main-right {
+  display: inline-block;
+  width: 560px;
+  font-size: 0;
+}
+.header-of-sort-by {
+  margin-right: 40px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.sort-by__label {
+  margin-right: 46px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.shop-item {
+  display: inline-block;
+  margin-right: 80px;
+  margin-bottom: 110px;
+  font-size: 0;
+}
+.shop-item:nth-of-type(2n) {
+  margin-right: 0;
+}
+.shop-item__image {
+  font-size: 16px;
+}
+.shop-item-order__name {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.shop-item-order__desc {
+  font-size: 14px;
+}
+.shop-item-order__to-cart {
+  font-size: 18px;
+}
+.pagination {
+  padding: 0;
+}
+.pagination-li {
+  display: inline-block;
+  font-size: 0;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+.pagination-li__a {
+  font-size: 12px;
+  text-decoration: none;
+}
