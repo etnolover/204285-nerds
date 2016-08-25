@@ -41,7 +41,6 @@ h2 {
 /*////////////////////////////////////////////////////*/
 /*----------------------Шапка------------------------ */
 /*////////////////////////////////////////////////////*/
-
 .header {
   /* 62px (расстояния от верха страницы до текста) + 14px (размер текста) + 62px */
   min-height: 138px;
@@ -51,8 +50,9 @@ h2 {
 .logo-header {
   display: inline-block;
   padding-top: 27px;
-  margin-right: 184px;
-  font-size: 0;
+  margin-right: 180px;
+  width: 139px;
+  vertical-align: top;
 }
 .logo__img {
   font-size: 16px;
@@ -62,18 +62,19 @@ h2 {
   padding: 0;
   padding-top: 62px;
   margin: 0;
-  margin-right: 94px;
+  margin-right: 95px;
   vertical-align: top;
 }
 .menu {
   display: inline-block;
   padding: 0;
+  width: 400px;
   vertical-align: top;
 }
 .menu__li {
   display: inline-block;
+  margin-right: 42px;
   vertical-align: top;
-  margin-right: 45px;
 }
 .menu__li:last-of-type {
   margin-right: 0;
@@ -230,6 +231,7 @@ h2 {
   display: inline-block;
   width: 140px;
   height: 38px;
+  vertical-align: top;
   border-radius: 3px;
   text-align: center;
 }
@@ -260,6 +262,7 @@ h2 {
   display: inline-block;
   margin-right: 65px;
   width: 573px;
+  vertical-align: top;
 }
 .h2 {
  /* Восстанавливаем размер шрифта, обнулённый методом борьбы с пробелами */
@@ -286,6 +289,7 @@ h2 {
   display: inline-block;
   margin-right: 65px;
   width: 573px;
+  vertical-align: top;
 }
 .about-us-bottom__services {
  /* Восстанавливаем размер шрифта, обнулённый методом борьбы с пробелами */
@@ -302,6 +306,7 @@ h2 {
 .about-us-bottom__right {
   display: inline-block;
   width: 242px;
+  vertical-align: top;
 }
 .about-us-bottom__skills {
  /* Восстанавливаем размер шрифта, обнулённый методом борьбы с пробелами */
@@ -368,9 +373,9 @@ h2 {
 }
 .main-left {
   display: inline-block;
-  vertical-align: top;
   margin: 0;
   margin-right: 80px;
+  vertical-align: top;
   font-size: 0;
   /* Поправить ширину */
   width: 200px;
@@ -410,6 +415,7 @@ h2 {
 .main-right {
   display: inline-block;
   width: 560px;
+  vertical-align: top;
   font-size: 0;
 }
 .header-of-sort-by {
@@ -426,6 +432,7 @@ h2 {
   display: inline-block;
   margin-right: 80px;
   margin-bottom: 110px;
+  vertical-align: top;
   font-size: 0;
 }
 .shop-item:nth-of-type(2n) {
@@ -451,6 +458,7 @@ h2 {
   display: inline-block;
   font-size: 0;
   margin-right: 10px;
+  vertical-align: top;
   text-transform: uppercase;
 }
 .pagination-li__a {
