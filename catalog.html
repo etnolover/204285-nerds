@@ -68,21 +68,21 @@
               </fieldset>
               <fieldset class="grid-types">
                 <legend class="grid-types__legend">Сетка:</legend>
-                <input name="grid-type" value="adaptive" type="radio" class="grid-types__variant" checked>
-                <label class="grid-types__label">Адаптивная</label>
-                <input name="grid-type" value="fixed" type="radio" class="grid-types__variant">
-                <label class="grid-types__label">Фиксированная</label>
-                <input name="grid-type" value="rubber" type="radio" class="grid-types__variant">
-                <label class="grid-types__label">Резиновая</label>
+                <input name="grid-type" id="adaptive" value="adaptive" type="radio" class="grid-types__variant" checked>
+                <label class="grid-types__label" for="adaptive">Адаптивная</label>
+                <input name="grid-type" id="fixed" value="fixed" type="radio" class="grid-types__variant">
+                <label class="grid-types__label" for="fixed">Фиксированная</label>
+                <input name="grid-type" id="rubber" value="rubber" type="radio" class="grid-types__variant">
+                <label class="grid-types__label" for="rubber">Резиновая</label>
               </fieldset>
               <fieldset class="features">
                 <legend class="features__legend">Особенности:</legend>
                 <input type="checkbox" id="slider" name="features" value="slider" class="features__type" checked>
-                <label class="features__label features__label_checked" for="slider">Слайдер</label>
+                <label class="features__label" for="slider">Слайдер</label>
                 <input type="checkbox" id="advantages" name="features" value="advantages" class="features__type">
                 <label class="features__label" for="advantages">Блок преимуществ</label>
                 <input type="checkbox" id="news" name="features" value="news" class="features__type" checked>
-                <label class="features__label features__label_checked" for="news">Новости</label>
+                <label class="features__label" for="news">Новости</label>
                 <input type="checkbox" id="gallery" name="features" value="gallery" class="features__type">
                 <label class="features__label" for="gallery">Галерея</label>
                 <input type="checkbox" id="cart" name="features" value="cart" class="features__type">
@@ -108,7 +108,7 @@
                 <img src="img/aviator.jpg" alt="Aviator" width="240" height="240" class="shop-item__image">
                 <div class="shop-item-order">
                   <p class="shop-item-order__name">Aviator</p>
-                  <p class="shop-item-order__desc">Одностраничный макет с<br>авторским дизайном</p>
+                  <p class="shop-item-order__desc">Одностраничный макет<br>с авторским дизайном</p>
                   <button type="submit" value="8000" class="shop-item-order__to-cart">8000</button>
                 </div>
               </article>
