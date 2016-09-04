@@ -215,8 +215,8 @@ h2 {
 }
 .slider__controls {
   position: absolute;
-  bottom: 95px;
-  left: 50%;
+  bottom: 85px;
+  left: 430px;
   z-index: 10;
 
   width: 200px;
@@ -226,8 +226,8 @@ h2 {
 }
 .slider__controls label {
   display: inline-block;
-  width: 4px;
-  height: 4px;
+  width: 10px;
+  height: 10px;
   margin: 0 3px;
 
   vertical-align: top;
@@ -243,10 +243,13 @@ h2 {
   line-height: 1;
 }
 .slide-text__title {
+  margin-bottom: 18px;
   font-weight: 500;
   font-size: 36px;
 }
 .slide-text__description {
+  margin-top: 0;
+  margin-bottom: 27px;
   font-weight: 500;
   line-height: 22px;
   color: #283136;
@@ -254,7 +257,6 @@ h2 {
 .slide-text__link {
   display: block;
   width: 240px;
-  margin-top: 29px;
   padding: 13px 10px;
 
   font-weight: 300;
@@ -650,7 +652,7 @@ h2 {
 /* Стили для слайдера цены */
 .price {
   height: 170px;
-  margin-bottom: 54px;
+  margin-bottom: 51px;
   border-width: 0;
 }
 .price__legend {
@@ -664,13 +666,13 @@ h2 {
 }
 .range-controls {
   position: relative;
-  height: 41px;
-  padding-top: 40px;
+  height: 80px;
+  padding-top: 39px;
   padding-bottom: 40px;
   padding-right: 20px;
   padding-left: 20px;
   margin-left: -2px;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   border-radius: 5px;
   background: #f1f1f1;
 }
@@ -687,8 +689,8 @@ h2 {
   position: absolute;
   top: 30px;
   left: 0px;
-  width: 4px;
-  height: 4px;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
   border: 8px solid #fff;
   border-radius: 50%;
@@ -696,42 +698,58 @@ h2 {
   box-shadow: 0 2px 1px 0 #cfcfcf;
 }
 .range-controls .toggle-min {
-  left: 50px;
+  left: 20px;
 }
 .range-controls .toggle-max {
-  left: 110px;
+  left: 160px;
 }
 .price-controls {
   font-size: 0;
 }
 .price-controls label {
-  font-size: 16px;
   display: inline-block;
+  font-size: 16px;
   width: 50%;
+}
+.price-from {
+  margin-left: -2px;
+  text-transform: uppercase;
+}
+.price-to {
+  text-transform: uppercase;
 }
 .max-price {
   text-align: right;
 }
+.min-price__input {
+  margin-left: 6px;
+}
+.max-price__input {
+  margin-left: 6px;
+}
 .price-controls input {
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: 'Roboto Medium', sans-serif;
   font-size: 16px;
-  width: 60px;
-  margin-left: 10px;
-  padding: 8px 10px;
+  width: 80px;
+  padding: 9px 10px;
   text-align: center;
   color: #283136;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
   outline: none;
   background: #f1f1f1;
 }
+/* Конец стилей для слайдера цены */
 
-
+/* Стили для выбора сетки */
 .grid-types {
   height: 142px;
   margin-bottom: 54px;
+  border-width: 0;
 }
 .grid-types__legend {
+  margin-left: -3px;
+  margin-bottom: 19px;
   font-size: 18px;
   text-transform: uppercase;
 }
@@ -739,6 +757,8 @@ h2 {
   display: block;
   font-size: 16px;
 }
+/* Конец стилей для выбора сетки */
+
 .features {
   height: 220px;
   margin-bottom: 58px;
@@ -747,9 +767,34 @@ h2 {
   font-size: 18px;
   text-transform: uppercase;
 }
+.features__type {
+  display: none;
+}
 .features__label {
+  position: relative;
   display: block;
+  margin: 10px 0;
+  line-height: 20px;
+  padding-left: 32px;
   font-size: 16px;
+  cursor: pointer;
+}
+.features__label::before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  content: "";
+  background-image: url('../img/sprite.png');
+  background-repeat: no-repeat;
+
+  width: 23px;
+  height: 23px;
+  background-position: -140px -5px;
+}
+.features__label_checked::before {
+  width: 27px;
+  height: 23px;
+  background-position: -103px -5px;
 }
 .main-right {
   display: inline-block;
