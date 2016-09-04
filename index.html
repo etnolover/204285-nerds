@@ -37,7 +37,7 @@
   <!-- Конец шапки -->
   <!-- Основной блок -->
     <main class="main">
-      <div class="container">
+      <header class="main-header">
       <!-- Начало слайдера -->
         <section class="slider">
         <!-- Переключатель слайдов -->
@@ -54,7 +54,7 @@
           <!-- Слайд 1 -->
             <div class="slide">
               <div class="slide-text">
-                <div class="slide-text__title">Долго, дорого, скрупулезно</div>
+                <div class="slide-text__title">Долго, дорого,<br>скрупулезно.</div>
                 <p class="slide-text__description">Математически выверенный дизайн<br>
                 для вашего сайта или мобильного приложения.</p>
                 <a href="#" class="slide-text__link">Узнать больше</a>
@@ -71,14 +71,16 @@
           <!-- Слайд 3 -->
             <div class="slide">
               <div class="slide-text">
-                <div class="slide-text__title">Только наркотики, только хардкор!</div>
+                <div class="slide-text__title">Только наркотики,<br>только хардкор!</div>
                 <p class="slide-text__description">Все дизайнерские решения в нашей компании принимаются<br>только под воздействием качественных галлюциногенов</p>
                 <a href="#" class="slide-text__link">Узнать больше</a>
               </div>
             </div>
           </div>
         </section>
+      </header>
       <!-- Конец слайдера -->
+      <div class="container">
       <!-- Секция об услугах -->
         <section class="services">
           <article class="services__service">
@@ -111,7 +113,7 @@
         <article class="about-us">
           <section class="about-us-top">
             <div class="about-us-top__left">
-              <h2 class="h2">Мы&mdash;маленькая, но гордая дизайн-студия из Краснодара.</h2>
+              <h2 class="h2">Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
               <p class="about-us-top__desc">Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
             </div>
             <div class="about-us-top__right">
@@ -125,17 +127,17 @@
             <div class="about-us-bottom__left">
               <p class="about-us-bottom__services">Выполняем заказы на разработку:</p>
               <ul class="about-us-bottom__services-list">
-                <li class="about-us-bottom__services-li about-us-bottom__services-li_red-line-before">Веб-сайтов любой сложности</li>
-                <li class="about-us-bottom__services-li about-us-bottom__services-li_red-line-before">Мобильных приложений для iOS и Android</li>
-                <li class="about-us-bottom__services-li about-us-bottom__services-li_red-line-before">Слайдшоу и видео для корпоративных презентаций</li>
+                <li class="about-us-bottom__services-li red-line-before">Веб-сайтов любой сложности</li>
+                <li class="about-us-bottom__services-li red-line-before">Мобильных приложений для iOS и Android</li>
+                <li class="about-us-bottom__services-li red-line-before">Слайдшоу и видео для корпоративных презентаций</li>
               </ul>
             </div>
             <div class="about-us-bottom__right">
               <p class="about-us-bottom__skills">Как мы работаем:</p>
               <ul class="about-us-bottom__skills-list">
-                <li class="about-us-bottom__skills-list-li about-us-bottom__skills-list-li_red-line-before">С самоотдачей 146%</li>
-                <li class="about-us-bottom__skills-list-li about-us-bottom__skills-list-li_red-line-before">Соблюдая сроки на 100%</li>
-                <li class="about-us-bottom__skills-list-li about-us-bottom__skills-list-li_red-line-before">По предоплате 50%</li>
+                <li class="about-us-bottom__skills-list-li red-line-before">С самоотдачей 146%</li>
+                <li class="about-us-bottom__skills-list-li red-line-before">Соблюдая сроки на 100%</li>
+                <li class="about-us-bottom__skills-list-li red-line-before">По предоплате 50%</li>
               </ul>
             </div>
           </section>
@@ -156,8 +158,8 @@
     <footer class="footer">
     <!-- Начало интерактивной карты -->
       <article class="footer__map">
-      <!-- Код карты гугл -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1054.4654829750073!2d30.32087151353328!3d59.938796179065946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1470421729148" width="100%" height="415" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <!-- Карты гугл -->
+        <div class="map" id="map"></div>
       <!-- Секция контакты на карте -->
         <div class="contacts">
           <p class="contacts__name">Nёrds design studio</p>
@@ -168,28 +170,27 @@
           <p class="contacts__phone">тел. +7 (812) 275-75-75</p>
           <a href="#" class="contacts__feedback">Напишите нам</a>
         </div>
-      <!-- Конец секции контакты на карте -->
-      <!-- Маркер, показывающий расположение компании на карте -->
-        <img src="img/marker.png" alt="Указатель" width="231" height="190" class="marker">
-      <!-- Конец маркера -->
       </article>
     <!-- Конец интерактивной карты -->
       <div class="container">
         <section class="social">
         <!-- Секция с социальными кнопками -->
-          <div class="social-btn">
-            <a href="https://www.vk.com" class="social-btn__vk">Вконтакте</a>
-            <a href="https://www.facebook.com" class="social-btn__fb">Фейсбук</a>
-            <a href="https://www.instagram.com" class="social-btn__inst">Инстаграм</a>
-          </div>
+        <div class="social-buttons">
+          <a href="https://www.vk.com" class="social-btn social-btn__vk"></a>
+          <a href="https://www.facebook.com" class="social-btn social-btn__fb"></a>
+          <a href="https://www.instagram.com" class="social-btn social-btn__inst"></a>
+        </div>
         <!-- Конец секции с социальными кнопками -->
           <div class="social-text">
-            <h2 class="h2">Давайте дружить, это выгодно!</h2>
+            <p class="h2 social-text__slogan">Давайте дружить, это выгодно!</p>
             <p class="social-text__details">Скидка 10% для друзей из социальных сетей.</p>
           </div>
         </section>
       </div>
     </footer>
   <!-- Конец подвала -->
+    <script src="js/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVyn5l9lyhXs4yk-WjBacqexmwefbhOcs&callback=initMap"
+    async defer></script>
   </body>
 </html>
