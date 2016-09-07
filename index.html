@@ -57,7 +57,7 @@
                 <div class="slide-text__title">Долго, дорого,<br>скрупулезно.</div>
                 <p class="slide-text__description">Математически выверенный дизайн<br>
                 для вашего сайта или мобильного приложения.</p>
-                <a href="#" class="slide-text__link">Узнать больше</a>
+                <a href="index.html/more" class="slide-text__link">Узнать больше</a>
               </div>
             </div>
           <!-- Слайд 2 -->
@@ -65,7 +65,7 @@
               <div class="slide-text">
                 <div class="slide-text__title">Любите ли вы математику, как любим ее мы?</div>
                 <p class="slide-text__description">Нашим дизайнерам мы удаляем нейроны, ответственные<br>за креатив, чтобы дать им возможность все просчитать</p>
-                <a href="#" class="slide-text__link">Узнать больше</a>
+                <a href="index.html/more" class="slide-text__link">Узнать больше</a>
               </div>
             </div>
           <!-- Слайд 3 -->
@@ -73,7 +73,7 @@
               <div class="slide-text">
                 <div class="slide-text__title">Только наркотики,<br>только хардкор!</div>
                 <p class="slide-text__description">Все дизайнерские решения в нашей компании принимаются<br>только под воздействием качественных галлюциногенов</p>
-                <a href="#" class="slide-text__link">Узнать больше</a>
+                <a href="index.html/more" class="slide-text__link">Узнать больше</a>
               </div>
             </div>
           </div>
@@ -87,20 +87,20 @@
             <img src="img/websites.png" alt="Ноутбук" width="240" height="124" class="services__img">
             <p class="services__name">Веб-сайты</p>
             <p class="services__desc">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a href="#" class="services__link services__link_red">Заказать</a>
+            <a href="index.html/order#website" class="services__link services__link_red">Заказать</a>
           </article>
           <article class="services__service">
             <img src="img/apps.png" alt="2 айфона" width="240" height="124" class="services__img">
             <p class="services__name">Приложения</p>
             <p class="services__desc">Покорите топ-10 приложений <br>в AppStore и Google Play</p>
-            <a href="#" class="services__link services__link_green">Заказать</a>
+            <a href="index.html/order#app" class="services__link services__link_green">Заказать</a>
           </article>
           <article class="services__service">
             <img src="img/presentations.png" alt="Презентация" width="240" height="124" class="services__img">
             <p class="services__name">Презентации</p>
             <p class="services__desc">Вы даже не подозреваете, насколько вы изумительны!</p>
             <span class="services__link-container services__link-container_yellow">
-              <a href="#" class="services__link services__link_yellow">Заказать</a>
+              <a href="index.html/order#presentation" class="services__link services__link_yellow">Заказать</a>
             </span>
           </article>
         </section>
@@ -156,6 +156,9 @@
       <article class="footer__map">
       <!-- Карты гугл -->
         <div class="map" id="map"></div>
+      </article>
+    <!-- Конец интерактивной карты -->
+      <div class="container">
       <!-- Секция контакты на карте -->
         <div class="contacts">
           <p class="contacts__name">Nёrds design studio</p>
@@ -166,9 +169,7 @@
           <p class="contacts__phone">тел. +7 (812) 275-75-75</p>
           <a href="#" class="contacts__feedback">Напишите нам</a>
         </div>
-      </article>
-    <!-- Конец интерактивной карты -->
-      <div class="container">
+      <!-- Конец секции контакты на карте -->
         <section class="social">
         <!-- Секция с социальными кнопками -->
         <div class="social-buttons">
@@ -184,6 +185,20 @@
         </section>
       </div>
     </footer>
+    <div class="modal-content">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <label class="label-feedback">Ваше имя:<br>
+          <input class="user-data-input user-name" type="text" name="user-name" placeholder="Представьтесь, пожалуйста">
+        </label>
+        <label class="label-feedback">Ваш e-mail:<br>
+          <input class="user-data-input user-email" type="email"  name="user-email" placeholder="Для отправки ответа">
+        </label>
+        <p class="feedback-header">Текст письма:</p>
+        <textarea class="user-data-input feedback-text" placeholder="В свободной форме"></textarea>
+        <button class="feedback-submit" type="submit">Отправить</button>
+      </form>
+    </div>
   <!-- Конец подвала -->
     <script src="js/script.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVyn5l9lyhXs4yk-WjBacqexmwefbhOcs&callback=initMap"
